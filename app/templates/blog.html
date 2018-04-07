@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <h2>Training</h2>
+            <p>Welcome back, {{ user.username }}!</p>
+            <p>In this column we will list your current TIP.</p>
+
+        </div>
+        <div class="col-6">
+
+            <h1>Blog</h1>
+            {% for post in posts %}
+            <h2>{{ post.postitle }}</h2>
+            <h3>Written by: {{ post.author.username }}</h3>
+            <p class="bg-light">{{ post.body}}</p>
+            {% endfor %}
+
+        </div>
+        <div class="col-3">
+
+            <h2>Index</h2>
+        <p>In this column we will list resources and a map of what you are reading relates to.</p>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

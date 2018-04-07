@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <h2>Training</h2>
+            <p>Welcome back, {{ user.username }}!</p>
+            <p>In this column we will list your current TIP.</p>
+
+        </div>
+        <div class="col-6">
+
+            <h1>Open Apprentice</h1>
+            <p>In this middle section we are going to have the main tutorial or checksheet item</p>
+
+        </div>
+        <div class="col-3">
+
+            <h2>Index</h2>
+        <p>In this column we will list resources and a map of what you are reading relates to.</p>
+        </div>
+    </div>
+</div>
+<hr>
+
+{% endblock %}
+
